@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>For Potato ❤️ | I'm Really Sorry</title>
+  <meta name="description" content="A personal apology letter to Potato. I'm sorry for missing your calls.">
+  
+  <!-- Google Fonts: Elegant Display + Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS SDK (loaded safely for client-side direct email sending) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Ambient Particle & Heart Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Main Story Flow -->
+  <main class="story-container">
+
+    <!-- ==========================================
+         SECTION 1: OPENING
+    ========================================== -->
+    <section id="section-1" class="section hero-section" data-section="1">
+      <div class="hero-glow-blob" aria-hidden="true"></div>
+      <div class="content-wrapper text-center hero-content">
+        <span class="badge-pill fade-in-delay-1">A letter from someone who messed up</span>
+        <h1 class="hero-title fade-in-delay-2">Hey Potato... <span class="heart-pulse">❤️</span></h1>
+        <p class="hero-subtitle fade-in-delay-3">I know you're angry with me...</p>
+        <p class="hero-subline fade-in-delay-4">And honestly...<br>I don't blame you.</p>
+        <div class="hero-cta-wrapper fade-in-delay-5">
+          <button id="btn-start-story" class="btn btn-primary btn-glow" type="button">
+            <span>Give me one chance 🥺</span>
+          </button>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-chevron"></span>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: THE TRUTH
+    ========================================== -->
+    <section id="section-2" class="section" data-section="2">
+      <div class="content-wrapper">
+        <div class="glass-card story-card text-center reveal-on-scroll">
+          <span class="story-step-tag">The truth</span>
+          <h2 class="section-title">Okay... let me explain.</h2>
+          
+          <div class="call-sequence">
+            <p class="sequence-line seq-1">You called me.</p>
+            <p class="sequence-line seq-2 highlight-text">Once.</p>
+            <p class="sequence-line seq-3 highlight-text">Twice.</p>
+            <p class="sequence-line seq-4 highlight-rose">Three times.</p>
+          </div>
+
+          <div class="broken-heart-container" aria-hidden="true">
+            <svg class="broken-heart-svg" viewBox="0 0 100 90" fill="none">
+              <path class="heart-half left-half" d="M50 82C50 82 12 55 12 30C12 18 21 10 32 10C41 10 47 16 50 22V82Z" fill="url(#brokenHeartGradLeft)" />
+              <path class="heart-half right-half" d="M50 82C50 82 88 55 88 30C88 18 79 10 68 10C59 10 53 16 50 22V82Z" fill="url(#brokenHeartGradRight)" />
+              <path class="crack-line" d="M50 22L46 36L54 48L47 62L50 82" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" />
+              <defs>
+                <linearGradient id="brokenHeartGradLeft" x1="12" y1="10" x2="50" y2="82" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ff4d79"/>
+                  <stop offset="1" stop-color="#800a2d"/>
+                </linearGradient>
+                <linearGradient id="brokenHeartGradRight" x1="88" y1="10" x2="50" y2="82" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ff4d79"/>
+                  <stop offset="1" stop-color="#800a2d"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <p class="sequence-line seq-5 missed-call-statement">And I missed every single one...</p>
+
+          <div class="explanation-box">
+            <p class="explanation-line">I wasn't ignoring you, Potato.</p>
+            <p class="explanation-line confession-text">I was stupidly busy playing a game.</p>
+            <p class="explanation-line">I know that doesn't make it better.</p>
+            <p class="explanation-line remorse-text">I should've paused the game.</p>
+            <p class="explanation-line remorse-text emphasis">I should've picked up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: THE 3 MISSED CALLS
+    ========================================== -->
+    <section id="section-3" class="section" data-section="3">
+      <div class="content-wrapper text-center">
+        <span class="story-step-tag">Evidence of my foolishness</span>
+        <h2 class="section-title">Those 3 Missed Calls</h2>
+        <p class="section-desc">Each notification is a reminder of what really mattered.</p>
+
+        <div class="call-cards-grid">
+          <!-- Card 1 -->
+          <div class="phone-call-card reveal-on-scroll" style="--card-delay: 0.1s;">
+            <div class="call-card-icon-wrap">
+              <svg class="phone-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.29-.29.38-.72.24-1.01A11.36 11.36 0 0 1 8.56 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.62c0-.55-.45-1-.99-1z"/>
+              </svg>
+              <span class="missed-badge">Missed</span>
+            </div>
+            <div class="call-card-details">
+              <h3 class="call-card-caller">Potato called...</h3>
+              <p class="call-card-label">Missed call #1</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="phone-call-card reveal-on-scroll" style="--card-delay: 0.25s;">
+            <div class="call-card-icon-wrap">
+              <svg class="phone-icon pulse-fast" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.29-.29.38-.72.24-1.01A11.36 11.36 0 0 1 8.56 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.62c0-.55-.45-1-.99-1z"/>
+              </svg>
+              <span class="missed-badge">Missed</span>
+            </div>
+            <div class="call-card-details">
+              <h3 class="call-card-caller">Potato called again...</h3>
+              <p class="call-card-label">Missed call #2</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="phone-call-card reveal-on-scroll" style="--card-delay: 0.4s;">
+            <div class="call-card-icon-wrap">
+              <svg class="phone-icon pulse-urgent" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.29-.29.38-.72.24-1.01A11.36 11.36 0 0 1 8.56 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.62c0-.55-.45-1-.99-1z"/>
+              </svg>
+              <span class="missed-badge urgent">Missed</span>
+            </div>
+            <div class="call-card-details">
+              <h3 class="call-card-caller">Potato really wanted to talk...</h3>
+              <p class="call-card-label">Missed call #3</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Playful Math Breakdown -->
+        <div class="math-recap-card glass-card reveal-on-scroll">
+          <div class="math-stat-row">
+            <div class="math-stat">
+              <span class="stat-number">3</span>
+              <span class="stat-desc">calls.</span>
+            </div>
+            <span class="math-divider">✕</span>
+            <div class="math-stat">
+              <span class="stat-number">0</span>
+              <span class="stat-desc">answers.</span>
+            </div>
+            <span class="math-divider">=</span>
+            <div class="math-stat stat-stupid">
+              <span class="stat-number">1</span>
+              <span class="stat-desc">very stupid boyfriend.</span>
+            </div>
+          </div>
+          <div class="playful-sigh">
+            <p>Yeah...</p>
+            <p class="sigh-text">I know. 😭</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: APOLOGY
+    ========================================== -->
+    <section id="section-4" class="section" data-section="4">
+      <div class="content-wrapper">
+        <div class="glass-card apology-card reveal-on-scroll">
+          <div class="card-ornament" aria-hidden="true">💌</div>
+          <h2 class="apology-heading text-center">Potato, I'm really sorry. <span class="heart-pulse">❤️</span></h2>
+          
+          <div class="apology-body-text">
+            <p>You called me because you wanted to talk to me, and instead of being there for you, I was busy playing a game.</p>
+            <p class="empathy-highlight">I understand why that hurt.</p>
+            <p class="empathy-highlight">I understand why you're angry.</p>
+            <p class="apology-confession">
+              I'm sorry for missing your calls.<br>
+              I'm sorry for making you feel ignored.<br>
+              And I'm sorry I didn't realize in that moment that your call mattered more than the game.
+            </p>
+            <p class="heart-accent-line">I never wanted to make you feel unimportant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: IF I COULD GO BACK
+    ========================================== -->
+    <section id="section-5" class="section" data-section="5">
+      <div class="content-wrapper text-center">
+        <span class="story-step-tag">Rewinding the clock</span>
+        <h2 class="section-title">If I could go back...</h2>
+
+        <!-- Interactive Morph Graphic -->
+        <div class="transformation-stage" id="transformation-stage">
+          <div class="device-graphic-wrapper">
+            <!-- Game Controller Graphic -->
+            <div class="graphic-item controller-graphic" id="controller-item">
+              <div class="gaming-aura" aria-hidden="true"></div>
+              <svg class="controller-svg" viewBox="0 0 120 80" fill="currentColor">
+                <path d="M96 15H24C10.7 15 0 25.7 0 39c0 14.5 10.3 26 23.8 26 5.5 0 10.6-1.9 14.7-5.1L51 48h18l12.5 11.9c4.1 3.2 9.2 5.1 14.7 5.1 13.5 0 23.8-11.5 23.8-26 0-13.3-10.7-24-24-24zM32 44h-6v6h-4v-6h-6v-4h6v-6h4v6h6v4zm54-1c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm12-8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+              </svg>
+              <span class="graphic-caption">The stupid game</span>
+            </div>
+
+            <!-- Transition Arrow / Sparkle -->
+            <div class="transition-indicator" id="transition-indicator" aria-hidden="true">
+              <span class="glow-arrow">➜</span>
+            </div>
+
+            <!-- Glowing Smartphone Graphic -->
+            <div class="graphic-item phone-graphic" id="phone-item">
+              <div class="phone-aura" aria-hidden="true"></div>
+              <svg class="smartphone-svg" viewBox="0 0 64 100" fill="none" stroke="currentColor">
+                <rect x="4" y="4" width="56" height="92" rx="12" stroke-width="4" stroke="currentColor" fill="rgba(255, 51, 102, 0.15)"/>
+                <circle cx="32" cy="14" r="2" fill="currentColor"/>
+                <rect x="24" y="86" width="16" height="3" rx="1.5" fill="currentColor"/>
+                <path d="M32 40 C32 30, 44 32, 44 44 C44 54, 32 60, 32 68 C32 60, 20 54, 20 44 C20 32, 32 30, 32 40 Z" fill="#ff3366"/>
+              </svg>
+              <span class="graphic-caption">Potato's call</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="replay-promises-list reveal-on-scroll">
+          <p class="promise-step">I'd pause the game.</p>
+          <p class="promise-step">I'd put everything down.</p>
+          <p class="promise-step emphasis-pickup">And I'd answer your call.</p>
+          <div class="priority-quote-box">
+            <p class="priority-quote">"Because no game is more important than you."</p>
+            <div class="soft-glowing-heart" aria-hidden="true">💖</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: MY LITTLE PROMISE
+    ========================================== -->
+    <section id="section-6" class="section" data-section="6">
+      <div class="content-wrapper">
+        <div class="glass-card promise-card text-center reveal-on-scroll">
+          <span class="story-step-tag">Locked in my heart</span>
+          <h2 class="section-title">One tiny promise? 🤍</h2>
+          
+          <div class="promise-message-box">
+            <p class="promise-text-lead">Next time Potato calls,</p>
+            <p class="promise-text-punch">the game can wait.</p>
+            <p class="promise-text-climax">You won't.</p>
+          </div>
+
+          <div class="promise-action-area">
+            <button id="btn-make-promise" class="btn btn-promise btn-glow" type="button">
+              <span class="btn-text">Promise 🤞</span>
+            </button>
+            <p id="promise-confirmed-text" class="promise-confirmed hidden">
+              No more making Potato wait.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 7: THE FORGIVENESS GAME
+    ========================================== -->
+    <section id="section-7" class="section" data-section="7">
+      <div class="content-wrapper">
+        <div class="glass-card forgiveness-card text-center reveal-on-scroll">
+          <span class="story-step-tag">Moment of truth</span>
+          <h2 class="section-title">So... Potato...</h2>
+          <p class="forgiveness-question">Will you forgive this idiot? 🥺</p>
+
+          <!-- Interactive Choices Area -->
+          <div id="forgiveness-choices" class="forgiveness-buttons-group">
+            <button id="btn-forgive-yes" class="btn btn-choice btn-yes" type="button">
+              <span>Yes ❤️</span>
+            </button>
+            <button id="btn-forgive-no" class="btn btn-choice btn-angry" type="button">
+              <span>Still angry 😤</span>
+            </button>
+          </div>
+
+          <!-- State: YES Response -->
+          <div id="response-yes" class="forgiveness-response-box hidden">
+            <div class="celebration-badge">🎉 ❤️ ✨</div>
+            <h3 class="thank-you-title">THANK YOU POTATO ❤️</h3>
+            <p class="thank-you-subtext">
+              I knew that beautiful heart of yours wouldn't stay angry forever. 🥺
+            </p>
+          </div>
+
+          <!-- State: STILL ANGRY Response -->
+          <div id="response-angry" class="forgiveness-response-box hidden">
+            <p class="angry-line-1">Okay okay... 😭</p>
+            <p class="angry-line-2">I deserve that.</p>
+            <p class="angry-line-3 hidden" id="angry-delay-text">But I'm still sorry.</p>
+            <div class="retry-wrapper hidden" id="angry-retry-wrap">
+              <button id="btn-try-again" class="btn btn-secondary" type="button">
+                <span>Try again? 🥺</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 8: HEARTFELT MESSAGE
+    ========================================== -->
+    <section id="section-8" class="section deeper-mood-section" data-section="8">
+      <div class="cinematic-backdrop" aria-hidden="true"></div>
+      <div class="content-wrapper text-center">
+        <div class="heartfelt-message-container reveal-on-scroll">
+          <p class="heartfelt-lead">
+            I don't want this little mistake to make you forget how much you mean to me.
+          </p>
+          
+          <div class="cadence-lines">
+            <p class="cadence-line">You're important to me.</p>
+            <p class="cadence-line">Your calls matter.</p>
+            <p class="cadence-line">Your feelings matter.</p>
+            <p class="cadence-line climax-you">And you matter.</p>
+          </div>
+
+          <p class="heartfelt-closer">I'm genuinely sorry, Potato.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 9: FINAL LOVE SCREEN
+    ========================================== -->
+    <section id="section-9" class="section final-love-section" data-section="9">
+      <div class="grand-aura" aria-hidden="true"></div>
+      
+      <div class="content-wrapper text-center final-love-content">
+        <!-- Center Pulsing Glowing Heart -->
+        <div class="grand-heart-visual" aria-hidden="true">
+          <div class="heart-halo"></div>
+          <svg class="grand-heart-svg" viewBox="0 0 100 90" fill="currentColor">
+            <path d="M50 85 C50 85 10 55 10 28 C10 14 22 5 35 5 C43 5 48 9 50 14 C52 9 57 5 65 5 C78 5 90 14 90 28 C90 55 50 85 50 85 Z"/>
+          </svg>
+        </div>
+
+        <h2 class="final-salutation">Potato ❤️</h2>
+        
+        <div class="final-love-poem">
+          <p>You are more important than any game,</p>
+          <p>any match,</p>
+          <p>any score,</p>
+          <p>and any win.</p>
+        </div>
+
+        <p class="final-pause-apology">I'm sorry I missed your calls.</p>
+        
+        <p class="final-quiet-love">I love you.</p>
+
+        <h1 class="grand-finale-title">LOVE YOU, POTATO ❤️</h1>
+
+        <p class="finale-signature">— From your idiot who should've picked up the phone 🥺</p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 10: REPLY TO ME
+    ========================================== -->
+    <section id="section-10" class="section reply-section" data-section="10">
+      <div class="content-wrapper">
+        <div class="glass-card reply-card text-center reveal-on-scroll">
+          <span class="story-step-tag">Your turn</span>
+          <h2 class="section-title">Still angry?</h2>
+          <p class="section-desc">Okay... you can tell me yourself. ❤️</p>
+
+          <!-- EmailJS / Message Form -->
+          <form id="reply-form" class="reply-form" novalidate>
+            <div class="form-group">
+              <label for="sender-name" class="form-label">
+                Your Name <span class="label-optional">(Optional)</span>
+              </label>
+              <input 
+                type="text" 
+                id="sender-name" 
+                name="name" 
+                class="form-input" 
+                placeholder="Potato (or your cute nickname)" 
+                value="Potato"
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="sender-message" class="form-label">
+                Your Message <span class="label-required">*</span>
+              </label>
+              <textarea 
+                id="sender-message" 
+                name="message" 
+                class="form-input form-textarea" 
+                rows="4" 
+                placeholder="Type whatever is in your heart... even if you're roasting me 🙈" 
+                required
+              ></textarea>
+              <span id="message-error" class="field-error-hint hidden">Please write a small message first! ❤️</span>
+            </div>
+
+            <button id="btn-submit-reply" class="btn btn-primary btn-glow btn-submit" type="submit">
+              <span class="btn-text">Send me a reply 💌</span>
+              <span class="btn-spinner hidden" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <!-- Status Messages -->
+          <div id="reply-success-box" class="reply-status-box success-box hidden">
+            <div class="status-icon">💌</div>
+            <h3 class="status-title">Your message reached me, Potato ❤️</h3>
+            <p class="status-subtext">Now I really hope you're smiling. 🥺</p>
+          </div>
+
+          <div id="reply-error-box" class="reply-status-box error-box hidden">
+            <div class="status-icon">😭</div>
+            <h3 class="status-title">Something went wrong</h3>
+            <p class="status-subtext">Please try again, or use the direct email button below.</p>
+            <button id="btn-retry-form" class="btn btn-secondary btn-retry" type="button">
+              Try again 🔄
+            </button>
+          </div>
+
+          <!-- Fallback Direct Email Button -->
+          <div class="fallback-email-wrapper">
+            <span class="fallback-divider">or</span>
+            <a 
+              id="fallback-mailto-link" 
+              class="btn btn-fallback" 
+              href="mailto:ksonowal424@gmail.com?subject=Potato%20replied%20to%20your%20apology%20%E2%9D%A4%EF%B8%8F&body=Hey%20idiot%2C%0A%0AI%20saw%20your%20apology%20website...%20"
+            >
+              <span>Reply via Email 💌</span>
+            </a>
+            <p class="fallback-note">Direct to: ksonowal424@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Confetti / Floating Heart Canvas -->
+  <canvas id="fx-canvas" class="fx-canvas" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
